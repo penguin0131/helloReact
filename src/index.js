@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; /*
-const FunctionalComponent = () => (
+import './index.css';
+import App from './App';
+import LectureGoalList from './components/LectureGoalList';
+
+/*const FunctionalComponent = () => (
   <div>
     <h1>안녕? 이것은 함수형 컴포넌트야!</h1>
     <h2>현재 시간은? {new Date().toLocaleString()}. </h2>
@@ -95,7 +98,7 @@ const nTimer2 = setTimeout(function() {
   clearInterval(nTimer);
 }, 5000);
 console.log(nTimer, nTimer2);*/
-
+ReactDOM.render(<LectureGoalList />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA

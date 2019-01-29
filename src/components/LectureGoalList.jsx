@@ -1,22 +1,12 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import App from '../App';
 
-class App extends Component {
+class LectureGoalList extends Component{
+
   render() {
-    //debugger;
     return (
-      <div className="App">
-        <h2> 강의 목표 </h2>
-        {/*        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
-        </header>*/}
+      <div className="LectureGoalList" style={{backgroundColor:'skyblue'}}>
+        <h2>강의목표</h2>
         <ul>
           <li>
             <input type="checkbox" />
@@ -46,6 +36,6 @@ class App extends Component {
       </div>
     );
   }
-}
 
-export default App;
+}
+export default LectureGoalList;
