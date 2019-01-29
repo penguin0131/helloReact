@@ -1,6 +1,58 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.css'; /*
+const FunctionalComponent = () => (
+  <div>
+    <h1>안녕? 이것은 함수형 컴포넌트야!</h1>
+    <h2>현재 시간은? {new Date().toLocaleString()}. </h2>
+  </div>
+);
+
+class StatelessComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>안녕? This is a stateless component! </h1>
+        <h2>now: {new Date().toLocaleString()}. </h2>
+      </div>
+    );
+  }
+}
+
+class StatefullComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      now: new Date().toLocaleString(),
+    };
+
+    var that = this;
+
+    setTimeout(function() {
+      console.log(this);
+      that.setState({
+        now: new Date().toLocaleTimeString(),
+      });
+    }, 5000);
+  }
+  render() {
+    return (
+      <div>
+        <h1>안녕? 이것은 상태가 있는 컴포넌트야!</h1>
+        <h2>현재 시간은? {this.state.now}. </h2>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <div>
+    <FunctionalComponent />
+    <StatelessComponent />
+    <StatefullComponent />
+  </div>,
+  document.getElementById('root')
+);*/
 //import App from './App';
 //import * as serviceWorker from './serviceWorker';
 //0128
@@ -28,7 +80,7 @@ const MyCom = () => <p>HTML 태그를 쓴 컴포넌트 </p>;
 console.log(MyElem, MyCom());
 */
 
-function tick() {
+/*function tick() {
   const element = (
     <div>
       <h1>hello, world!</h1>
@@ -42,7 +94,8 @@ const nTimer = setInterval(tick, 1000);
 const nTimer2 = setTimeout(function() {
   clearInterval(nTimer);
 }, 5000);
-console.log(nTimer, nTimer2);
+console.log(nTimer, nTimer2);*/
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
